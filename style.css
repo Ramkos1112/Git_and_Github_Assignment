@@ -1,6 +1,7 @@
 :root{
     --textColor: #ffffff;
     --hoverColor: #5691ff;
+    --blurColor: #000000c0;
 }
 body{
     background-image: url(./resources/bg.jpg);
@@ -11,8 +12,10 @@ body{
     margin: 0;
     padding: 0 10px;
 }
+
+/* stylizing the base tab */
 #mainTab{
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -79,10 +82,6 @@ body{
     width: 100%;
     margin-bottom: 100px;
 
-    /* > div {
-        width: 100%;
-    } */
-
     > div > button{
         border: solid 1px var(--textColor);
         color: var(--textColor);
@@ -97,22 +96,174 @@ body{
         cursor: pointer;
     }
 }
+
+/* Stylizing the 1st tab, intro tab. */
 .introDisplay{
-    display: flex;
+    display: none;
 }
 #intro{
-    display: none;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+    margin-top: 150px;
+    padding: 10px 50px;
+
+    color: var(--textColor
+    );
+
+    > div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    > div > h2{
+        border-bottom: 1px solid var(--textColor);
+        padding-bottom: 10px;
+    }
+
+    > div > img {
+        height: 50px;
+        width: auto;
+    }
+
+    > div > img:hover {
+        rotate: 90deg;
+        transition: 1s;
+    }
+
+    background-image: url(resources/bg-overlay.png);
+    background-color: var(--blurColor)
 }
+/* work tab styling */
 #work{
-    display: none;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+    margin-top: 150px;
+    padding: 10px 50px;
+
+    color: var(--textColor
+    );
+
+    > div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    > div > h2{
+        border-bottom: 1px solid var(--textColor);
+        padding-bottom: 10px;
+    }
+
+    > div > img {
+        height: 50px;
+        width: auto;
+    }
+
+    > div > img:hover {
+        rotate: 90deg;
+        transition: 1s;
+    }
+
+    background-image: url(resources/bg-overlay.png);
+    background-color: var(--blurColor)
 }
+/* about tab styling  */
 #about{
-    display: none;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+    margin-top: 150px;
+    padding: 10px 50px;
+
+    color: var(--textColor
+    );
+
+    > div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    > div > h2{
+        border-bottom: 1px solid var(--textColor);
+        padding-bottom: 10px;
+    }
+
+    > div > img {
+        height: 50px;
+        width: auto;
+    }
+
+    > div > img:hover {
+        rotate: 90deg;
+        transition: 1s;
+    }
+
+    background-image: url(resources/bg-overlay.png);
+    background-color: var(--blurColor)
 }
 #contact{
-    display: none;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+    margin-top: 150px;
+    padding: 10px 50px;
+
+    color: var(--textColor
+    );
+
+    > div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    > div > h2{
+        border-bottom: 1px solid var(--textColor);
+        padding-bottom: 10px;
+    }
+
+    > div > img {
+        height: 50px;
+        width: auto;
+    }
+
+    > div > img:hover {
+        rotate: 90deg;
+        transition: 1s;
+    }
+
+    > div > a{
+        text-decoration: none;
+        color: var(--textColor);
+        border: solid 1px #ffffff;
+        padding: 5px;
+    }
+
+    > div > a:hover{
+        background-color: #ffffff80;
+    }
+
+    background-image: url(resources/bg-overlay.png);
+    background-color: var(--blurColor)
 }
 @media (min-width: 769px){
+    /* Main tab changes in desktop */
     .textArea{
         width: 90%;
         display: flex;
@@ -124,6 +275,63 @@ body{
 
         > div {
             width: 150px;
+        }
+    }
+    /* Intro tab changes for desktop */
+    #intro{
+        margin: 150px;
+        padding: 10px 50px;
+
+        > *{
+            padding: 15px 0px;
+        }
+
+        > video{
+            height: 300px;
+            width: 600px;
+            align-self: center;
+        }
+    }
+    #work{
+        margin: 150px;
+        padding: 10px 50px;
+
+        > *{
+            padding: 15px 0px;
+        }
+
+        > img{
+            height: 350px;
+            width: auto;
+            align-self: center;
+        }
+    }
+    #about{
+        margin: 150px;
+        padding: 10px 50px;
+
+        > *{
+            padding: 15px 0px;
+        }
+
+        > img{
+            height: 300px;
+            width: auto;
+            align-self: center;
+        }
+    }
+    #contact{
+        margin: 150px;
+        padding: 10px 50px;
+
+        > *{
+            padding: 15px 0px;
+        }
+
+        > img{
+            height: 300px;
+            width: auto;
+            align-self: center;
         }
     }
 }
