@@ -1,0 +1,128 @@
+:root{
+    --textColor: #ffffff;
+    --hoverColor: #5691ff;
+}
+body{
+    background-image: url(./resources/bg.jpg);
+    background-size: cover, cover;
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat;
+    height: 100vh;
+    margin: 0;
+    padding: 0 10px;
+#mainTab{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--textColor);
+    height: 100%;
+}
+.svgGem{
+
+    margin-top: 100px;
+
+    > img{
+        height: 50px;
+        width: auto;
+        padding: 50px;
+
+        display: flex;
+
+        border: solid 1px var(--textColor);
+        border-radius: 50%;
+    }
+}
+.column{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100px;
+
+    >div {
+        width: 50%;
+    }
+
+    > .whiteColumn{
+        border-right: solid 1px var(--textColor);
+    }
+}
+.textArea{
+    border-top: solid 1px var(--textColor);
+    border-bottom: solid 1px var(--textColor);
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0px;
+    padding: 25px 0px;
+
+    > h1{
+        align-self: center;
+    }
+
+    > p > a {
+        text-decoration:underline;
+        text-decoration-style: dotted;
+        color: var(--textColor);
+    }
+
+    > p > a:hover{
+        color: var(--hoverColor);
+    }
+}
+.tabButtons{
+    color: var(--textColor);
+    box-sizing: border-box;
+    
+    width: 100%;
+    margin-bottom: 100px;
+
+    /* > div {
+        width: 100%;
+    } */
+
+    > div > button{
+        border: solid 1px var(--textColor);
+        color: var(--textColor);
+        background-color: transparent;
+
+        height: 50px;
+        width: 100%;
+    }
+
+    > div > button:hover{
+        background-color: #ffffff46;
+        cursor: pointer;
+    }
+}
+.introDisplay{
+    display: flex;
+}
+#intro{
+    display: none;
+}
+#work{
+    display: none;
+}
+#about{
+    display: none;
+}
+#contact{
+    display: none;
+}
+@media (min-width: 769px){
+    .textArea{
+        width: 90%;
+        display: flex;
+        align-items: center;
+    }
+    .tabButtons{
+        display: flex;
+        justify-content: center;
+
+        > div {
+            width: 150px;
+        }
+    }
+}
