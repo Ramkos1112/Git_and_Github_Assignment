@@ -9,7 +9,7 @@
 </head>
 <body>
     <main>
-        <section id="mainTab">
+        <section class="mainTab">
             <div class="svgGem">
                 <img src="./resources/gem-regular.svg" alt="Gem icon">
             </div>
@@ -27,25 +27,25 @@
             </div>
             <div class="tabButtons">
                 <div>
-                    <button>INTRO</button>
+                    <button class="introButton">INTRO</button>
                 </div>
                 <div>
-                    <button>WORK</button>
+                    <button class="workButton">WORK</button>
                 </div>
                 <div>
-                    <button>ABOUT</button>
+                    <button class="aboutButton">ABOUT</button>
                 </div>
                 <div>
-                    <button>CONTACT</button>
+                    <button class="contactButton">CONTACT</button>
                 </div>
             </div>
         </section>
-        <section id="intro" class="introDisplay">
+        <section class="introDisplay hidden">
             <div>
                 <h2>INTRO</h2>
-                <img src="resources/xmark-solid.svg" alt="X button">
+                <img src="resources/xmark-solid.svg" class="introExitButton" alt="X button">
             </div>
-            <video src="resources/tab-1.mp4"></video>
+            <video autoplay muted loop><source src="./resources/tab-1.mp4" type="video/mp4"></video>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia iusto tempora facilis quis unde, sapiente vel dolor, ea illum dicta voluptatibus laborum maxime perspiciatis consequuntur aliquid inventore magni molestiae voluptates. 
             </p>
@@ -53,10 +53,10 @@
                 Cupiditate exercitationem in magni fugit iusto sunt nam, esse qui at sint tempore libero illo natus doloremque est obcaecati quisquam ut atque fuga recusandae placeat assumenda, ullam veritatis? Quos, voluptates! Debitis, iste quas. A, blanditiis aspernatur. Quidem voluptatum vero fugiat nam! Fugiat nesciunt harum voluptatibus a fuga repellat amet, exercitationem, optio ex corporis, modi provident error consequatur libero animi necessitatibus totam? Excepturi quis illum illo quaerat tenetur. Laboriosam, atque tenetur!
             </p>
             </section>
-            <section id="work">
+            <section class="workDisplay hidden">
                 <div>
                     <h2>Work</h2>
-                    <img src="resources/xmark-solid.svg" alt="X button">
+                    <img class="workExitButton" src="resources/xmark-solid.svg"  alt="X button">
                 </div>
                 <img src="resources/tab-2.jpg" alt="Worker image">
                 <p>
@@ -66,10 +66,10 @@
                     Alias perspiciatis rem debitis eveniet numquam excepturi error? Ab iusto necessitatibus fugit vitae impedit, earum voluptate obcaecati veniam perferendis accusamus qui minus. Architecto, quisquam. Fugiat eveniet illum quidem vitae aliquam voluptatum iusto fuga ex dolor, ipsam temporibus asperiores nemo ut dolores tenetur sunt ipsa nobis possimus facilis repellendus ratione sint.
                 </p>
             </section>
-        <section id="about">
+        <section class="aboutDisplay hidden">
             <div>
                 <h2>ABOUT</h2>
-                <img src="resources/xmark-solid.svg" alt="X button">
+                <img class="aboutExitButton" src="resources/xmark-solid.svg"  alt="X button">
             </div>
             <img src="resources/tab-3.jpg" alt="about image">
             <p>
@@ -79,10 +79,10 @@
                 Eveniet assumenda temporibus, libero iste modi, vitae dicta blanditiis totam fugiat deleniti quam nihil reiciendis? Aliquid saepe ut adipisci possimus dignissimosunde reprehenderit quasi, recusandae alias, neque beatae non eligendi voluptatibus minus soluta consequatur vitae sed nisi cumque ab, magni veritatis nobis. Minusminima alias vel voluptas reprehenderit sequi eveniet? Aliquam est excepturi et quia, rerum unde veniam! Tenetur expedita assumenda at quas molestias corporis quamquod quo, consequuntur repellat? Dolorem.
             </p>
         </section>
-        <section id="contact">
+        <section class="contactDisplay hidden">
             <div>
                 <h2>Contact</h2>
-                <img src="resources/xmark-solid.svg" alt="X button">
+                <img class="contactExitButton" src="resources/xmark-solid.svg" alt="X button">
             </div>
             <img src="./resources/tab-4.jpg" alt="picture containing meta logo">
             <h3>You may contact us via the following:</h3>
