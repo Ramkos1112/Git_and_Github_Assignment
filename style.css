@@ -1,0 +1,337 @@
+:root{
+    --textColor: #ffffff;
+    --hoverColor: #5691ff;
+    --blurColor: #000000c0;
+}
+body{
+    background-image: url(./resources/bg.jpg);
+    background-size: cover, cover;
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat;
+    height: 100vh;
+    margin: 0;
+    padding: 0 10px;
+}
+
+/* stylizing the base tab */
+#mainTab{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--textColor);
+    height: 100%;
+}
+.svgGem{
+
+    margin-top: 100px;
+
+    > img{
+        height: 50px;
+        width: auto;
+        padding: 50px;
+
+        display: flex;
+
+        border: solid 1px var(--textColor);
+        border-radius: 50%;
+    }
+}
+.column{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100px;
+
+    >div {
+        width: 50%;
+    }
+
+    > .whiteColumn{
+        border-right: solid 1px var(--textColor);
+    }
+}
+.textArea{
+    border-top: solid 1px var(--textColor);
+    border-bottom: solid 1px var(--textColor);
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0px;
+    padding: 25px 0px;
+
+    > h1{
+        align-self: center;
+    }
+
+    > p > a {
+        text-decoration:underline;
+        text-decoration-style: dotted;
+        color: var(--textColor);
+    }
+
+    > p > a:hover{
+        color: var(--hoverColor);
+    }
+}
+.tabButtons{
+    color: var(--textColor);
+    box-sizing: border-box;
+    
+    width: 100%;
+    margin-bottom: 100px;
+
+    > div > button{
+        border: solid 1px var(--textColor);
+        color: var(--textColor);
+        background-color: transparent;
+
+        height: 50px;
+        width: 100%;
+    }
+
+    > div > button:hover{
+        background-color: #ffffff46;
+        cursor: pointer;
+    }
+}
+
+/* Stylizing the 1st tab, intro tab. */
+.introDisplay{
+    display: none;
+}
+#intro{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+    margin-top: 150px;
+    padding: 10px 50px;
+
+    color: var(--textColor
+    );
+
+    > div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    > div > h2{
+        border-bottom: 1px solid var(--textColor);
+        padding-bottom: 10px;
+    }
+
+    > div > img {
+        height: 50px;
+        width: auto;
+    }
+
+    > div > img:hover {
+        rotate: 90deg;
+        transition: 1s;
+    }
+
+    background-image: url(resources/bg-overlay.png);
+    background-color: var(--blurColor)
+}
+/* work tab styling */
+#work{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+    margin-top: 150px;
+    padding: 10px 50px;
+
+    color: var(--textColor
+    );
+
+    > div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    > div > h2{
+        border-bottom: 1px solid var(--textColor);
+        padding-bottom: 10px;
+    }
+
+    > div > img {
+        height: 50px;
+        width: auto;
+    }
+
+    > div > img:hover {
+        rotate: 90deg;
+        transition: 1s;
+    }
+
+    background-image: url(resources/bg-overlay.png);
+    background-color: var(--blurColor)
+}
+/* about tab styling  */
+#about{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+    margin-top: 150px;
+    padding: 10px 50px;
+
+    color: var(--textColor
+    );
+
+    > div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    > div > h2{
+        border-bottom: 1px solid var(--textColor);
+        padding-bottom: 10px;
+    }
+
+    > div > img {
+        height: 50px;
+        width: auto;
+    }
+
+    > div > img:hover {
+        rotate: 90deg;
+        transition: 1s;
+    }
+
+    background-image: url(resources/bg-overlay.png);
+    background-color: var(--blurColor)
+}
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+    margin-top: 150px;
+    padding: 10px 50px;
+
+    color: var(--textColor
+    );
+
+    > div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    > div > h2{
+        border-bottom: 1px solid var(--textColor);
+        padding-bottom: 10px;
+    }
+
+    > div > img {
+        height: 50px;
+        width: auto;
+    }
+
+    > div > img:hover {
+        rotate: 90deg;
+        transition: 1s;
+    }
+
+    > div > a{
+        text-decoration: none;
+        color: var(--textColor);
+        border: solid 1px #ffffff;
+        padding: 5px;
+    }
+
+    > div > a:hover{
+        background-color: #ffffff80;
+    }
+
+    background-image: url(resources/bg-overlay.png);
+    background-color: var(--blurColor)
+}
+@media (min-width: 769px){
+    /* Main tab changes in desktop */
+    .textArea{
+        width: 90%;
+        display: flex;
+        align-items: center;
+    }
+    .tabButtons{
+        display: flex;
+        justify-content: center;
+
+        > div {
+            width: 150px;
+        }
+    }
+    /* Intro tab changes for desktop */
+    #intro{
+        margin: 150px;
+        padding: 10px 50px;
+
+        > *{
+            padding: 15px 0px;
+        }
+
+        > video{
+            height: 300px;
+            width: 600px;
+            align-self: center;
+        }
+    }
+    #work{
+        margin: 150px;
+        padding: 10px 50px;
+
+        > *{
+            padding: 15px 0px;
+        }
+
+        > img{
+            height: 350px;
+            width: auto;
+            align-self: center;
+        }
+    }
+    #about{
+        margin: 150px;
+        padding: 10px 50px;
+
+        > *{
+            padding: 15px 0px;
+        }
+
+        > img{
+            height: 300px;
+            width: auto;
+            align-self: center;
+        }
+    }
+    #contact{
+        margin: 150px;
+        padding: 10px 50px;
+
+        > *{
+            padding: 15px 0px;
+        }
+
+        > img{
+            height: 300px;
+            width: auto;
+            align-self: center;
+        }
+    }
+}
